@@ -13,15 +13,17 @@ export const Menu = () => {
         <a href="#">Contato</a>
         <a href="#">Blog</a>
         <a href="#">| Perfil</a>
-        <span>Somos a vivalá</span>
       </header>
-      <div className="grid justify-items-center">
+      <div className="grid justify-items-center relative">
         <img
           src="/Fotos/bannervivala.png"
           alt="vivala"
           width={2005}
           height={546}
         />
+        <div className="flex absolute bottom-0 center-0 text-white font-semibold ">
+          <p className="text-6x1">Somos a vivalá</p>
+        </div>
       </div>
       <div className="container mx-auto">
         <div className="grid justify-items-center">
@@ -104,5 +106,3 @@ export const Menu = () => {
     </>
   );
 };
-
-//<h1 className="text-6xl text-center mb-16 font-bold">SOMOS A VIVALÁ</h1>
