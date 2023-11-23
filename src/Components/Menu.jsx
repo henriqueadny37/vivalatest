@@ -1,28 +1,33 @@
 import Link from "next/link";
+import { Footer } from "./Footer";
 export const Menu = () => {
   return (
     <>
-      <header className="container mx-auto flex justify-center p-10 gap-5 text-lg">
-        <a href="#">Inicio</a>
-        <a href="#">Encontre sua Expedição</a>
-        <a href="#" className="text-orange-500">
-          A vivalá
-        </a>
-        <a href="#">Para Organizações</a>
-        <a href="#">Central de ajuda</a>
-        <a href="#">Contato</a>
-        <a href="#">Blog</a>
-        <a href="#">| Perfil</a>
-<<<<<<< HEAD
-=======
-        <div className="flex gap-5 mt-2">
-          <img src="/Fotos/flagspain.png" alt="flag spain" />
-          <img src="/Fotos/flagUSA.png" alt="flag USA" />
-          <img src="/Fotos/flagBrazil.png" alt="flag Brazil" />
-        </div>
->>>>>>> d1903093e904bf9854ffba76d5f4a450bf6c505e
-      </header>
       <div className="grid justify-items-center relative">
+        <header className="absolute container mx-auto flex justify-center p-10 gap-5 text-lg text-white width=[10140px] height=[992px]">
+          <a href="#">Inicio</a>
+          <a href="#">Encontre sua Expedição</a>
+          <a href="#" className="text-orange-500">
+            A vivalá
+          </a>
+          <a href="#">Para Organizações</a>
+          <a href="#">Central de ajuda</a>
+          <a href="#">Contato</a>
+          <a href="#">Blog</a>
+          <a href="#">| Perfil</a>
+          <div className="flex gap-3 mt-2">
+            <div>
+              <img src="/Fotos/flagspain.png" alt="bandeira espanha" />
+            </div>
+            <div>
+              <img src="/Fotos/flagUSA.png" alt="bandeira USA" />
+            </div>
+            <div>
+              <img src="/Fotos/flagBrazil.png" alt="bandeira brasil" />
+            </div>
+          </div>
+        </header>
+
         <img
           src="/Fotos/bannervivala.png"
           alt="vivala"
@@ -30,46 +35,105 @@ export const Menu = () => {
           height={546}
         />
         <div className="flex absolute bottom-0 center-0 text-white font-semibold ">
-          <p className="text-6x1">Somos a vivalá</p>
+          <p className="text-4xl mb-5">Somos a vivalá</p>
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="grid justify-items-center">
+        <div>
           <p className="mt-10 text-center text-gray-600 text-4xl">
             Nosso objetivo é transformar o Brasil no maior destino de turismo
             sustentável do mundo criando expedições que sejam transformadoras
             para os viajantes, as comunidades e o planeta.
           </p>
-          <p className="text-gray-600 text-xl font-semibold">
+        </div>
+        <div className="mt-10  grid justify-items-center">
+          <p className="mr-[800px] text-gray-600 text-3xl font-semibold">
             Viajando com a vivalá, você:
           </p>
           <img
             src="/Fotos/infografico.png"
             alt="infografico"
-            width={10140}
+            width={1040}
             height={992}
           />
         </div>
-        <div className="flex">
-          <p className="text-xl font-semibold text-gray-500">
-            VIVALÁ EM NÚMEROS
-          </p>
-          <div>
-            <img src="/Fotos/groupfoto.png" alt="" />
+        <p className="text-xl font-semibold text-gray-500 mt-10">
+          VIVALÁ EM NÚMEROS
+        </p>
+        <div className="flex m-10">
+          <div className="grid justify-items-center relative">
+            <div className="absolute mr-10">
+              <img src="/Fotos/Layer_1.png" alt="icone-1" />
+              <div className="w-10 mt-44">
+                <p className="break-word text-white">
+                  <span className="text-white font-bold text-xl">1716</span>{" "}
+                  viajantes de 10 paises
+                </p>
+              </div>
+            </div>
+            <img src="/Fotos/groupfoto.png" alt="the first group vivala" />
           </div>
-          <div>
-            <img src="/Fotos/groupfoto2.png" alt="" />
+          <div className="grid justify-items-center relative">
+            <div className="absolute ml-16 p-3">
+              <img src="/Fotos/Layer_2.png" alt="icone-2" />
+              <div className="w-10 mt-44">
+                <p className="break-word text-white">
+                  <span className="font-bold text-xl">111</span> expedições em
+                  grupo
+                </p>
+              </div>
+            </div>
+            <img src="/Fotos/groupfoto2.png" alt="foto-grupo-vivala" />
           </div>
-          <div>
-            <img src="/Fotos/groupfoto3.png" alt="" />
+          <div className="grid justify-items-center relative">
+            <div className="absolute w-8 h-8 p-2 sm:w-28 h-28 pt-8">
+              <img src="/icons/circlemoney.svg" alt="circle-money" />
+              <img src="/icons/house.svg" alt="casa-vivala" />
+              <p className="text-white font-semibold w-18 h18">
+                <span className="font-bold">R$ 1.7M</span>
+                injetados nas economias locais
+              </p>
+            </div>
+
+            <img src="/Fotos/groupfoto3.png" alt="duas-pessoas-vivalá" />
           </div>
-          <div>
-            <img src="/Fotos/vivianepediatria2.png" alt="" />
+          <div className="grid justify-items-center relative">
+            <div className="absolute mr-10 p-3">
+              <img src="/icons/timevivala.svg" alt="icons-timevivala" />
+              <div className="w-10 mt-44">
+                <p className="break-word text-white">
+                  <span className="text-white font-bold text-xl">8152</span>{" "}
+                  Horas de volunturismo
+                </p>
+              </div>
+            </div>
+            <img
+              src="/Fotos/vivianepediatria2.png"
+              alt="viviane-pediatria-vivala"
+            />
           </div>
-          <div>
+          <div className="grid justify-items-center relative">
+            <div className="absolute mr-10">
+              <img src="/icons/hands.svg" alt="hands vivala" />
+              <div className="w-10 mt-44">
+                <p className="break-word text-white">
+                  <span className="text-white font-bold text-xl">201</span>{" "}
+                  negócios familiares mentorados
+                </p>
+              </div>
+            </div>
             <img src="/Fotos/image58.png" alt="" />
           </div>
-          <div>
+          <div className="grid justify-items-center relative">
+            <div className="absolute mr-10 ">
+              <img src="/icons/treevivala.svg" alt="arvore-vivala" />
+              <div className="w-10 mt-44">
+                <p className="break-word text-white">
+                  <span className="text-white font-bold text-xl">16</span>{" "}
+                  destinos em área preservadas
+                </p>
+              </div>
+            </div>
             <img src="/Fotos/groupfoto4.png" alt="" />
           </div>
         </div>
@@ -80,37 +144,64 @@ export const Menu = () => {
           </button>
         </div>
         <div className="flex mt-20 font-semibold text-4xl text-gray-500">
-          <img src="/Fotos/moeda.png" alt="moeda" />
+          <img src="/Fotos/moeda.png" alt="moedaPlaneta" />
           <p className="ml-3">
             Acreditamos que o turismo sustentável seja fator chave para o
             desenvolvimento socioambiental e empoderamento de comunidades
             brasileiras.
           </p>
         </div>
-        <div className="grid justify-items-center relative mt-44">
-          <img src="/Fotos/2017-09-18-photo.png" alt="Amazonia" />
-          <div className="flex absolute center-0 center-0 bg-white mt-28">
-            <img src="/Fotos/Frame.png" alt="mountain,flag" />
-            Ressignificar a relação das pessoas com o Brasil, os biomas e as
-            comunidades tradicionais do país.
+        <div className="h-screen flex justify-center items-center mt-10 relative">
+          <img src="/Fotos/2017-09-18-photo.png" alt="amazonia vivala" />
+          <div className="flex mb-96 flex-shrink-0 w-[742px] h-[193px] border border-black bg-white absolute">
+            <div className="flex flex-col text-orange-600 font-bold p-5">
+              <img
+                src="/Fotos/Frame.png"
+                alt="Mountain_icon_vivala"
+                className="w-[62px] h-[64px] ml-5 flex flex-shrink-0"
+              />
+              <span className="p-2 text-2xl">Nossa Missão</span>
+            </div>
+            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+              <p>
+                Ressignificar a relação das pessoas com o Brasil, os biomas e as
+                comunidades tradicionais do país.
+              </p>
+            </div>
           </div>
-          <div className="flex absolute bottom-0 center-0 bg-white mb-44">
-            <img src="/Fotos/Frameyes.png" alt="eye" />
-            <p>
-              Transformar o Brasil no maior destino de turismo sustentável do
-              planeta.
-            </p>
+          <div className="flex mt-10 w-[742px] h-[193px] border border-black bg-white absolute">
+            <div className="flex flex-col text-orange-600 font-bold p-5 flex-shrink-0">
+              <img
+                src="/Fotos/Frameyes.png"
+                alt="Eye_icon_vivala"
+                className="w-[62px] h-[64px] ml-5"
+              />
+              <span className="p-2 text-2xl">Nossa Visão</span>
+            </div>
+            <div className="flex-1 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+              <p>
+                Ressignificar a relação das pessoas com o Brasil, os biomas e as
+                comunidades tradicionais do país.
+              </p>
+            </div>
           </div>
-          <div className="flex absolute top-0 mt-60 w-96 h-64 bg-white shrink">
-            <img src="/Fotos/hearticon.png" alt="hearticon" />
-            <p className="flex break-words text-center">
-              1. Tratar o planeta como nosso maior acionista 2. Revelar o melhor
-              do nosso potencial 3. Proporcionar experiências inesquecíveis 4.
-              Fortalecer o respeito pelo diverso 5. Guiar o caminho do bem
-            </p>
+          <div className="flex mt-96 flex-shrink-0 w-[742px] h-[193px] border border-black bg-white absolute">
+            <div className="flex flex-col text-orange-600 font-bold p-5">
+              <img
+                src="/Fotos/hearticon.png"
+                alt="Heart_icon_vivala"
+                className="w-[62px] h-[64px] ml-5 flex flex-shrink-0"
+              />
+              <span className="p-2 text-2xl">Nossos Valores</span>
+            </div>
+            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+              <p>
+                Ressignificar a relação das pessoas com o Brasil, os biomas e as
+                comunidades tradicionais do país.
+              </p>
+            </div>
           </div>
         </div>
-
         <span className="text-gray-600 font-semibold text-2xl">
           Premios e conquistas
         </span>
@@ -201,8 +292,93 @@ export const Menu = () => {
           </button>
         </div>
         <div className="flex justify-center mt-20">
-          <img src="/Fotos/_MG_7408 1.png" alt="fa;c parte do nosso time" />
+          <img src="/Fotos/_MG_7408 1.png" alt="faça parte do nosso time" />
         </div>
+      </div>
+      <div className="flex w-full h-1/2 mt-10 md:flex-row flex-col justify-around items-start relative">
+        <div className="absolute start-10 center-0 py-5 ">
+          <ul>
+            <img src="/Fotos/Logo Vivala.png" alt="" />
+            <li className="font-medium text-white font-italic md:text-white">
+              Vivalá Turismo e Serviços Ltda
+            </li>
+            <li className="font-medium text-white font-italic md:not-italic">
+              CNPJ 22.693.622.0001-85
+            </li>
+          </ul>
+        </div>
+        <div className="absolute mr-96 py-5 text-white">
+          <ul>
+            <li>Inicio</li>
+            <li>Busca</li>
+            <li>A vivalá</li>
+            <li>Para organizações</li>
+            <li>Central de ajuda</li>
+            <li>Contato</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div className="absolute ml-72 flex p-5 text-white">
+          <ul>
+            <p className="text-2xl">Fale conosco</p>
+            <li className="flex">
+              <Link href="#">
+                <img src="/Fotos/Vector.png" alt="whats" />
+                <p>+55 (11) 966585778</p>
+              </Link>
+            </li>
+            <li className="flex">
+              <Link href="#">
+                <img src="/Fotos/Vector.png" alt="" />
+                +55 (11) 983491518
+              </Link>
+            </li>
+            <li className="flex">
+              <a href="#">
+                <img src="/Fotos/ic_round-mail-outline.png" alt="" />
+                contato@vivala.hotmail.com
+              </a>
+            </li>
+            <li className="py-5">
+              Av Paulista 960, cj 502, Bela Vista,
+              <br /> São Paulo, CEP 01310-100
+            </li>
+          </ul>
+        </div>
+        <div className="absolute flex justify-end ml-96 gap-5 py-5">
+          <div className="flex gap-2 ml-96">
+            <div>
+              <img src="/Fotos/instagram.png" alt="instgram-icon" />
+            </div>
+            <div>
+              <img src="/Fotos/ic_baseline-facebook.png" alt="facebook" />
+            </div>
+            <div>
+              <img src="/Fotos/mdi_linkedin.png" alt="linkedin" />
+            </div>
+            <div>
+              <img src="/Fotos/mdi_youtube.png" alt="youtube" />
+            </div>
+            <div className="flex">
+              <div className="mt-44">
+                <input type="email" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-3 justify-content justify-end">
+            <div>
+              <img src="/Fotos/flagBrazil.png" alt="" />
+            </div>
+            <div>
+              <img src="/Fotos/flagspain.png" alt="" />
+            </div>
+            <div>
+              <img src="/Fotos/flagUSA.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <img src="/Fotos/IMG_5882Footer.png" alt="Footer_vivala" />
       </div>
     </>
   );
