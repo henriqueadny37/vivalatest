@@ -3,8 +3,8 @@ import { Footer } from "./Footer";
 export const Menu = () => {
   return (
     <>
-      <div className="grid justify-items-center relative">
-        <header className="absolute container mx-auto flex justify-center p-10 gap-5 text-lg text-white width=[10140px] height=[992px]">
+      <div className="grid justify-items-center relative w-full">
+        <header className="absolute container  flex justify-center p-10 gap-5 text-lg text-white height=[992px]">
           <a href="#">Inicio</a>
           <a href="#">Encontre sua Expedição</a>
           <a href="#" className="text-orange-500">
@@ -27,15 +27,14 @@ export const Menu = () => {
             </div>
           </div>
         </header>
-
         <img
           src="/Fotos/bannervivala.png"
           alt="vivala"
-          width={2005}
           height={546}
+          className="w-full"
         />
         <div className="flex absolute bottom-0 center-0 text-white font-semibold ">
-          <p className="text-4xl mb-5">Somos a vivalá</p>
+          <p className="text-4xl mb-8">Somos a vivalá</p>
         </div>
       </div>
       <div className="container mx-auto">
@@ -143,7 +142,7 @@ export const Menu = () => {
             <Link href="#">Saiba Mais</Link>
           </button>
         </div>
-        <div className="flex mt-20 font-semibold text-4xl text-gray-500">
+        <div className="flex mt-20 p-5 container mx-auto font-semibold text-4xl text-gray-500">
           <img src="/Fotos/moeda.png" alt="moedaPlaneta" />
           <p className="ml-3">
             Acreditamos que o turismo sustentável seja fator chave para o
@@ -153,7 +152,7 @@ export const Menu = () => {
         </div>
         <div className="h-screen flex justify-center items-center mt-10 relative">
           <img src="/Fotos/2017-09-18-photo.png" alt="amazonia vivala" />
-          <div className="flex mb-96 flex-shrink-0 w-[742px] h-[193px] border border-black bg-white absolute">
+          <div className="flex mb-96 flex-shrink-0 w-[742px] h-[193px]  bg-white absolute">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/Frame.png"
@@ -169,7 +168,7 @@ export const Menu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-10 w-[742px] h-[193px] border border-black bg-white absolute">
+          <div className="flex mt-10 w-[742px] h-[193px] bg-white absolute">
             <div className="flex flex-col text-orange-600 font-bold p-5 flex-shrink-0">
               <img
                 src="/Fotos/Frameyes.png"
@@ -185,7 +184,7 @@ export const Menu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-96 flex-shrink-0 w-[742px] h-[193px] border border-black bg-white absolute">
+          <div className="flex mt-96 flex-shrink-0 w-[742px] h-[250px] border border-black bg-white absolute">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
@@ -194,20 +193,23 @@ export const Menu = () => {
               />
               <span className="p-2 text-2xl">Nossos Valores</span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
-              <p>
-                Ressignificar a relação das pessoas com o Brasil, os biomas e as
-                comunidades tradicionais do país.
-              </p>
+            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-xl">
+              <ul>
+                <li>1. tratar o planeta como nosso maior acionista</li>
+                <li>2. Revelar o melhor do nosso potencial</li>
+                <li>3. Proporcionar experiencias inesqueciveis</li>
+                <li>4. Fortacele o respeito pelo universo</li>
+                <li>5. Guiar o caminho do bem</li>
+              </ul>
             </div>
           </div>
         </div>
-        <span className="text-gray-600 font-semibold text-2xl">
+        <p className="text-gray-600 text-3xl ml-60 mb-10 font-semibold">
           Premios e conquistas
-        </span>
+        </p>
         <div className="flex justify-center gap-5">
           <div className="flex-none w-2 h-8"></div>
-          <div className="w-56 h-52 border border-gray text-center text-xs shrink">
+          <div className="w-56 h-52 p-5 border border-gray text-center text-xs shrink">
             <span className="mt-5 text-gray-600 font-semibold">
               Vencedora do Global Student Entrepreneurs Award (GSEA)
             </span>
@@ -218,24 +220,24 @@ export const Menu = () => {
             />
             <div className="flex-none w-2 h-2"></div>
           </div>
-          <div className="grid justify-items-center w-56 h-52 border border-gray text-center text-xs text-gray-600 font-semibold shrink">
+          <div className="grid justify-items-center w-56 h-52 p-5 border border-gray text-center text-xs text-gray-600 font-semibold shrink-0">
             <span>Participação no programa de aceleração Inovativa Brasil</span>
             <img src="/Fotos/inovativa 1.png" alt="inovativa" />
           </div>
-          <div className="grid justify-items-center w-56 h-52 border border-gray text-center text-xs text-gray-600 font-semibold shrink">
+          <div className="grid justify-items-center w-56 h-52 p-5 border border-gray text-center text-xs text-gray-600 font-semibold shrink-0">
             <span>
               Escolhida como Young Leaders of America (YLAI), Washington DC,
               Denver, Detroit
             </span>
             <img src="/Fotos/YLAI 1.png" alt="" />
           </div>
-          <div className=" w-56 h-56 grid justify-items-center border border-gray text-center text-xs text-gray-600 font-semibold shrink">
+          <div className=" w-56 h-52 p-5 grid justify-items-center border border-gray text-center text-xs text-gray-600 font-semibold shrink-0">
             <p>
               Vencedora dos Prêmios Braztoa 2019 e 2020-2022, ONU e Organização
               Mundial de Turismo de Sustentabilidade
             </p>
-            <div className="container mx-auto flex">
-              <img src="/Fotos/image 44.png" alt="" />
+            <div className="container mx-auto flex justify-center w-20 h-14 gap-2">
+              <img src="/Fotos/image 44.png" alt="brazta" />
               <img src="/Fotos/UNEnvironment_Logo_1.png" alt="UNEnviroment" />
               <img src="/Fotos/World_Tourism_Organization_Logo 1.png" alt="" />
             </div>
@@ -246,27 +248,36 @@ export const Menu = () => {
             Saiba Mais
           </button>
         </div>
-        <div className="grid grid-rows-3 grid-flow-col gap-4 mt-20">
+        <div>
+          <p className="text-gray-700 font-semibold text-3xl">
+            VIVALÁ NA MIDIA
+          </p>
+        </div>
+        <div className="grid grid-rows-2 grid-flow-col gap-4 mt-20 container mx-auto">
           <div className="row-span-3 border border-gray-200">
             <img src="/Fotos/image 40.png" alt="familia" />
-            <span className="text-orange-600 font-semibold text-2xl">
+            <span className="text-orange-600 font-semibold text-2xl p-5">
               Territorio animal
             </span>
-            <div className="flex">
+            <div className="flex p-5">
               <span>
                 Como a Vivalá está potencializando a preservação ambiental no
-                Brasil por meio do Turismo Sustentável
+                Brasil por meio do <br /> Turismo Sustentável
               </span>
             </div>
           </div>
           <div className="col-span-2 border border-gray-200">
             <div className="flex gap-4 text-2xl">
               <img src="/Fotos/image 37.png" alt="Diario do Comercio" />
-              <span className="font-semibold text-orange-600">
-                Diário do Comercio
-              </span>
+              <div className="flex flex-col">
+                <span className="font-semibold text-orange-600">
+                  Diário do Comercio
+                </span>
+                <span className="text-gray-600 font-normal md:font-normal">
+                  Vivalá rende folego ás economias locais
+                </span>
+              </div>
             </div>
-            <span>Vivalá rende folego ás economias locais</span>
           </div>
           <div className="row-span-2 border border-gray-200">
             <div className="flex gap-4 text-2xl w-3/4">
@@ -274,15 +285,15 @@ export const Menu = () => {
                 src="/Fotos/Expedição_Lençois Maranhense_222.png"
                 alt="lençois maranhenses"
               />
-              <span className="text-orange-600 font-semibold">
-                Nome da mídia
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-center">
-                Título da matéria. Se for maior que 4 linhas fica com 3
-                pontinhos para não quebrar o padrão.
-              </span>
+              <div className="flex flex-col">
+                <span className="text-orange-600 font-semibold">
+                  Nome da mídia
+                </span>
+                <span className="text-center text-gray-600 font-normal">
+                  Título da matéria. Se for maior que 4 linhas fica com 3
+                  pontinhos para não quebrar o padrão.
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -291,8 +302,17 @@ export const Menu = () => {
             Confira Mais Matérias
           </button>
         </div>
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-20 relative">
           <img src="/Fotos/_MG_7408 1.png" alt="faça parte do nosso time" />
+          <div className="flex p-20 pr-80  text-white absolute">
+            <ul>
+              <p className="text-4xl font-semibold w-72 h-20">
+                Faça parte do nosso time
+              </p>
+              <li>Mande seu CV para</li>
+              <li className="font-bold">contato@vivala.com.br</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="flex w-full h-1/2 mt-10 md:flex-row flex-col justify-around items-start relative">
@@ -345,7 +365,47 @@ export const Menu = () => {
             </li>
           </ul>
         </div>
-        <div className="absolute flex justify-end ml-96 gap-5 py-5">
+
+        <div className="flex justify-between  ml-[800px] p-3 absolute ">
+          <div className="flex gap-2">
+            <div>
+              <img src="/Fotos/instagram.png" alt="instgram-icon" />
+            </div>
+            <div>
+              <img src="/Fotos/ic_baseline-facebook.png" alt="facebook" />
+            </div>
+            <div>
+              <img src="/Fotos/mdi_linkedin.png" alt="linkedin" />
+            </div>
+            <div>
+              <img src="/Fotos/mdi_youtube.png" alt="youtube" />
+            </div>
+          </div>
+          <div className="flex gap-3 ml-10">
+            <div>
+              <img src="/Fotos/flagBrazil.png" alt="" />
+            </div>
+            <div>
+              <img src="/Fotos/flagspain.png" alt="" />
+            </div>
+            <div>
+              <img src="/Fotos/flagUSA.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/Fotos/IMG_5882Footer.png"
+          alt="Footer_vivala"
+          className="w-full"
+        />
+      </div>
+    </>
+  );
+};
+
+{
+  /*    <div className="absolute flex justify-end ml-96 gap-5 py-5">
           <div className="flex gap-2 ml-96">
             <div>
               <img src="/Fotos/instagram.png" alt="instgram-icon" />
@@ -359,13 +419,8 @@ export const Menu = () => {
             <div>
               <img src="/Fotos/mdi_youtube.png" alt="youtube" />
             </div>
-            <div className="flex">
-              <div className="mt-44">
-                <input type="email" name="" id="" />
-              </div>
-            </div>
           </div>
-          <div className="flex gap-3 justify-content justify-end">
+          <div className="flex gap-3 justify-content justify-end py-2">
             <div>
               <img src="/Fotos/flagBrazil.png" alt="" />
             </div>
@@ -376,10 +431,5 @@ export const Menu = () => {
               <img src="/Fotos/flagUSA.png" alt="" />
             </div>
           </div>
-        </div>
-
-        <img src="/Fotos/IMG_5882Footer.png" alt="Footer_vivala" />
-      </div>
-    </>
-  );
-};
+        </div>  */
+}
