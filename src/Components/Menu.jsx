@@ -51,7 +51,7 @@ export const Menu = () => {
               <img src="/icons/circlemoney.svg" alt="circle-money" />
               <img src="/icons/house.svg" alt="casa-vivala" />
             </div>
-            <div className=" absolute container mx-auto py-80 text-white tracking-wide w-28 md:text-base sm:text-sm sm:w-5 sm:h-4">
+            <div className="flex flex-col container mx-auto absolute py-80 text-white w-28 md:text-base sm:text-sm ">
               <ul>
                 <p className="font-bold text-2xl">R$ 1.7M</p>
                 <li>injetados nas</li>
@@ -65,7 +65,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-10 p-3 py-10">
               <img src="/icons/timevivala.svg" alt="icons-timevivala" />
             </div>
-            <div className="flex flex-wrap absolute container mx-auto py-80 text-white tracking-wide w-28 md:text-base sm:text-sm">
+            <div className="flex flex-wrap container mx-auto absolute py-80 text-white w-28 ml-10 text-xl">
               <p>
                 <span className="font-bold text-4xl">8152</span>
                 <br />
@@ -81,7 +81,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-5 py-7">
               <img src="/icons/hands.svg" alt="hands vivala" />
             </div>
-            <div className="flex flex-wrap absolute text-white container mx-auto py-80 tracking-wide w-32 md:text-base sm:text-sm">
+            <div className="flex flex-wrap absolute text-white container mx-auto py-80 w-32 ml-10 md:text-base sm:text-sm">
               <ul>
                 <p className="font-bold text-4xl">201</p>
                 <li>negocios</li>
@@ -95,7 +95,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-10 py-10">
               <img src="/icons/treevivala.svg" alt="arvore-vivala" />
             </div>
-            <div className="flex flex-wrap absolute text-white container mx-auto py-80 tracking-wide w-32 md:w-28 md:text-base sm:text-sm">
+            <div className="flex flex-wrap absolute text-white container mx-auto py-80 ml-10 w-32 text-xl md:w-28 md:text-base sm:text-sm">
               <ul>
                 <p className="font-bold text-4xl">16</p>
                 <li>Destinos</li>
@@ -112,18 +112,13 @@ export const Menu = () => {
             <Link href="#">Saiba Mais</Link>
           </button>
         </div>
-        <div className="flex col-span-2 my-10 mx-20">
-          <div className="flex text-3xl text-gray-600 font-semibold">
-            <img src="/Fotos/moeda.png" alt="foto-mundo" />
-            <div className="flex flex-col py-5 mx-10">
-              <span>
-                Acreditamos que o turismo sustentável <br /> seja fator chave
-                para o desenvolvimento <br /> socioambiental e empoderamento de{" "}
-                <br />
-                comunidades brasileiras.
-              </span>
-            </div>
-          </div>
+        <div className="flex justify-center items-center py-10">
+          <img src="/Fotos/moeda.png" alt="foto-mundo" />
+          <span className="text-gray-600 text-2xl">
+            Acreditamos que o turismo sustentável <br /> seja fator chave para o
+            desenvolvimento <br /> socioambiental e empoderamento de <br />
+            comunidades brasileiras.
+          </span>
         </div>
         <div className="h-screen flex justify-center items-center mt-10 relative ">
           <img
@@ -131,49 +126,55 @@ export const Menu = () => {
             alt="amazonia vivala"
             className="w-full md:w-full sm:w-full"
           />
-          <div className="flex mb-96 flex-shrink-0 w-[742px] h-[193px]  bg-white absolute">
+          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] h-[193px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px] md:w-[742px] md:h-[193px]">
             <div className="flex flex-col text-orange-600 font-bold p-5 md:flex md:flex-col md:mb-4">
               <img
                 src="/Fotos/Frame.png"
                 alt="Mountain_icon_vivala"
                 className="w-[62px] h-[64px] ml-5 flex flex-shrink"
               />
-              <span className="p-2 text-2xl">Nossa Missão</span>
+              <span className="p-2 sm:text-sm md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl">
+                Nossa Missão
+              </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
-              <p>
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+              <p className="sm:text-sm md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
                 Ressignificar a relação das pessoas com o Brasil, os biomas e as
                 comunidades tradicionais do país.
               </p>
             </div>
           </div>
-          <div className="flex mt-10 w-[742px] h-[193px] bg-white absolute">
+          <div className="flex mt-10 2xl:w-[1000px] h-[193px] 2xl:mb-20 xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px] md:w-[742px] md:h-[193px] md:mt-10">
             <div className="flex flex-col text-orange-600 font-bold p-5 flex-shrink-0">
               <img
                 src="/Fotos/Frameyes.png"
                 alt="Eye_icon_vivala"
-                className="w-[62px] h-[64px] ml-5"
+                className="w-[62px] h-[64px] ml-5 flex-shrink"
               />
-              <span className="p-2 text-2xl">Nossa Visão</span>
+              <span className="p-2 sm:text-sm md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl">
+                Nossa Visão
+              </span>
             </div>
-            <div className="flex-1 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
-              <p>
+            <div className="flex-1 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+              <p className="sm:text-sm md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
                 Transformar o Brasil no maior destino de turismo sustentavél do
                 planeta
               </p>
             </div>
           </div>
-          <div className="flex mt-96 flex-shrink w-[742px] h-[250px] shadow bg-white absolute -my-40">
+          <div className="flex xl:mt-[400px] 2xl:mt-[250px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-80 sm:h-[500px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
                 alt="Heart_icon_vivala"
-                className="w-[62px] h-[64px] ml-5 flex flex-shrink-0"
+                className="sm:w-[64px] sm:[64px] md:h-20 md:w-20 xl:w-24 xl:h-24 ml-5 flex flex-shrink-0"
               />
-              <span className="p-2 text-2xl">Nossos Valores</span>
+              <span className="p-2 sm:text-sm md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl">
+                Nossos Valores
+              </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-600 items-center w-32 h-32 ml-14 p-7 break-words text-xl">
-              <ul>
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-xl">
+              <ul className="sm:text-sm md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl">
                 <li>1. tratar o planeta como nosso maior acionista</li>
                 <li>2. Revelar o melhor do nosso potencial</li>
                 <li>3. Proporcionar experiencias inesqueciveis</li>
@@ -219,7 +220,7 @@ export const Menu = () => {
               <img
                 src="/Fotos/image 44.png"
                 alt="brazta"
-                className="md:w-5 h-4 sm:hidden"
+                className="md:w-5 h-4"
               />
               <img src="/Fotos/UNEnvironment_Logo_1.png" alt="UNEnviroment" />
               <img src="/Fotos/World_Tourism_Organization_Logo 1.png" alt="" />
@@ -367,4 +368,24 @@ export const Menu = () => {
         </div>
 
 */
+}
+
+{
+  /*    <div className="flex col-span-2 my-10 mx-20">
+          <div className="flex text-3xl text-gray-600 font-semibold">
+            <img src="/Fotos/moeda.png" alt="foto-mundo" />
+            <div className="flex flex-col py-5 mx-10">
+              <span>
+                Acreditamos que o turismo sustentável <br /> seja fator chave
+                para o desenvolvimento <br /> socioambiental e empoderamento de{" "}
+                <br />
+                comunidades brasileiras.
+              </span>
+            </div>
+          </div>
+        </div>*/
+}
+
+{
+  /* */
 }

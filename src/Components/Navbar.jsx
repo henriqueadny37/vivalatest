@@ -8,10 +8,10 @@ export const Navbar = () => {
               <img
                 src="/Fotos/Logo Vivala.png"
                 alt="LOGO"
-                className="p-2 w-44"
+                className="p-2 w-44 translate-x-4 translate-y-4"
               />
             </div>
-            <div className="md:static absolute text-white py-11 left-0 top-[-100%] md:min-h-fit min-h-[60vh] md:w-auto w-full flex items-center px-5 md:justify-center xl:font-normal 2xl:font-normal">
+            <div className="md:static absolute text-white py-11 left-0 top-[-100%] md:min-h-fit min-h-[60vh] md:w-auto w-full flex items-center px-5 md:justify-center xl:font-semibold 2xl:font-semibold text-xl">
               <ul className="flex md:flex-row flex-col gap-4 md:items-center">
                 <li>
                   <a href="#">Inicio</a>
@@ -69,13 +69,16 @@ export const Navbar = () => {
           className="w-full md:flex sm:hidden"
         />
         <img src="/Fotos/image 1.png" alt="" className="w-full md:hidden" />
-        <div className="flex absolute bottom-0 center-0 text-center text-white font-semibold ">
-          <p className="text-4xl mb-8">Somos a vivalá</p>
+        <div className="translate-x-96 absolute bottom-0 center-0 text-white font-semibold">
+          <p className="flex flex-wrap justify-center items-center text-7xl mb-8">
+            Somos a vivalá
+          </p>
         </div>
       </div>
     </>
   );
 };
+
 {
   /* primeira foto
 md:min-h-[60vh] md:min-h-[60vh]

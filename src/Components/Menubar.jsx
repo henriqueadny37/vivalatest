@@ -36,7 +36,7 @@ export const Menubar = () => {
           height={546}
           className="w-full"
         />
-        <div className="flex absolute bottom-0 center-0 text-white font-semibold ">
+        <div className="flex  bottom-0 center-0 absolute text-white font-semibold ">
           <p className="text-4xl mb-8">Somos a vivalá</p>
         </div>
       </div>
