@@ -14,16 +14,16 @@ export const Menu = () => {
             para os viajantes, as comunidades e o planeta.
           </p>
         </div>
-        <p className="flex flex-wrap py-10 text-gray-600 text-3xl md:flex md:flex-row">
-          Viajando com a vivalá, você:
+        <p className="flex flex-wrap py-10 mx-4 text-gray-600 md:text-2xl text-3xl font-semibold md:flex md:flex-row">
+          VIAJANDO COM A VIVALÁ, VOCE:
         </p>
-        <div className="flex fle-wrap container mx-auto">
+        <div className="flex justify-center items-center">
           <img src="/Fotos/infografico.png" alt="foto-grande" />
         </div>
-        <p className="text-xl font-semibold text-gray-500 mt-10">
+        <p className="text-xl mx-4 mb-3 lg:text-3xl 2xl:text-4xl 2xl:mb-6 font-semibold text-gray-500 mt-10">
           VIVALÁ EM NÚMEROS
         </p>
-        <div className="flex m-10 container mx-auto py-auto">
+        <div className="flex justify-center items-center">
           <div className="justify-items-center relative lg:1/6">
             <div className="absolute mr-14 w-10 h-10 sm:w-full sm:h-full">
               <img src="/Fotos/Layer_1.png" alt="icone-1" />
@@ -126,7 +126,7 @@ export const Menu = () => {
             alt="amazonia vivala"
             className="w-full md:w-full sm:w-full"
           />
-          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] h-[193px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px] md:w-[742px] md:h-[193px]">
+          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] h-[193px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px]  md:w-[742px] md:h-[193px]">
             <div className="flex flex-col text-orange-600 font-bold p-5 md:flex md:flex-col md:mb-4">
               <img
                 src="/Fotos/Frame.png"
@@ -162,7 +162,7 @@ export const Menu = () => {
               </p>
             </div>
           </div>
-          <div className="flex xl:mt-[400px] 2xl:mt-[250px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-80 sm:h-[500px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
+          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-80 sm:h-[500px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
@@ -184,7 +184,7 @@ export const Menu = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-600 text-3xl ml-60 mb-10 font-semibold">
+        <p className="text-gray-600 text-3xl 2xl:py-32 ml-60 mb-10 font-semibold">
           Premios e conquistas
         </p>
         <div className="flex justify-center gap-5">
@@ -216,7 +216,7 @@ export const Menu = () => {
               Vencedora dos Prêmios Braztoa 2019 e 2020-2022, ONU e Organização
               Mundial de Turismo de Sustentabilidade
             </p>
-            <div className="container mx-auto flex justify-center w-20 h-14 gap-2 shrink sm:hidden">
+            <div className="container mx-auto flex justify-around w-20 h-14 gap-2 shrink">
               <img
                 src="/Fotos/image 44.png"
                 alt="brazta"
@@ -387,5 +387,5 @@ export const Menu = () => {
 }
 
 {
-  /* */
+  /*div-pai do grupo de fotos m-10 container mx-auto py-auto */
 }

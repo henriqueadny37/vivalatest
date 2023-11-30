@@ -11,8 +11,8 @@ export const Navbar = () => {
                 className="p-2 w-44 translate-x-4 translate-y-4"
               />
             </div>
-            <div className="md:static absolute text-white py-11 left-0 top-[-100%] md:min-h-fit min-h-[60vh] md:w-auto w-full flex items-center px-5 md:justify-center xl:font-semibold 2xl:font-semibold text-xl">
-              <ul className="flex md:flex-row flex-col gap-4 md:items-center">
+            <div className="md:static absolute text-white py-11 left-0 top-[-100%] sm:hidden md:flex md:justify-center md:min-h-fit min-h-[60vh] md:w-auto w-full flex items-center px-5 xl:font-semibold 2xl:font-semibold text-xl lg:flex lg:w-full md:text-lime-500 md:items-center lg:text-yellow-300 xl:text-pink-500  2xl:text-white">
+              <ul className=" md:flex sm:hidden md:items-center xl:gap-4 md:gap-2 md:justify-center">
                 <li>
                   <a href="#">Inicio</a>
                 </li>
@@ -44,15 +44,27 @@ export const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex hidden md:flex gap-3 mt-2">
+            <div className="flex sm:hidden md:flex md:gap-3 lg:gap-3 xl:gap-3 2xl:gap-3 mt-2">
               <div>
-                <img src="/Fotos/flagspain.png" alt="bandeira espanha" />
+                <img
+                  src="/Fotos/flagspain.png"
+                  alt="bandeira espanha"
+                  className="md:w-[30px] md:h-[16px] shadow-lg lg:w-[20px] lg:h-[15px]"
+                />
               </div>
               <div>
-                <img src="/Fotos/flagUSA.png" alt="bandeira USA" />
+                <img
+                  src="/Fotos/flagUSA.png"
+                  alt="bandeira USA"
+                  className="md:w-[30px] md:h-[16px] shadow-lg lg:w-[20px] lg:h-[15px]"
+                />
               </div>
               <div>
-                <img src="/Fotos/flagBrazil.png" alt="bandeira brasil" />
+                <img
+                  src="/Fotos/flagBrazil.png"
+                  alt="bandeira brasil"
+                  className="md:w-[30px] md:h-[16px] shadow-lg lg:w-[20px] lg:h-[15px]"
+                />
               </div>
             </div>
             <img
@@ -66,12 +78,12 @@ export const Navbar = () => {
           src="/Fotos/bannervivala.png"
           alt="vivala"
           height={546}
-          className="w-full md:flex sm:hidden"
+          className="sm:hidden md:flex md:w-full lg:flex lg:w-full xl:flex xl:w-full 2xl:flex 2xl:w-full"
         />
         <img src="/Fotos/image 1.png" alt="" className="w-full md:hidden" />
-        <div className="translate-x-96 absolute bottom-0 center-0 text-white font-semibold">
-          <p className="flex flex-wrap justify-center items-center text-7xl mb-8">
-            Somos a vivalá
+        <div className="sm:translate-x-56 absolute bottom-0 center-0 sm:text-yellow-400 sm:flex sm:justify-center sm:items-center md:text-white md:flex xl:translate-x-[500px] lg:translate-x-96 2xl:translate-x-[1000px] transition-all font-semibold">
+          <p className="flex md:flex md:justify-center md:items-center sm:text-3xl md:text-3xl lg:text-4xl 2xl:text-7xl mb-8">
+            SOMOS A VIVALÁ
           </p>
         </div>
       </div>
@@ -87,4 +99,12 @@ md:min-h-[60vh] md:min-h-[60vh]
 
 {
   /*className=" sm:min-h-full sm:w-full flex" */
+}
+{
+  /* div nav
+flex justify-between items-center absolute container mx-autor
+  */
+}
+{
+  /* div ul gap-4  md:flex-row */
 }
