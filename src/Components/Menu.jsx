@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Rserva } from "./Rserva";
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 
 export const Menu = () => {
   return (
@@ -28,7 +29,7 @@ export const Menu = () => {
             <div className="absolute mr-14 w-10 h-10 sm:w-full sm:h-full">
               <img src="/Fotos/Layer_1.png" alt="icone-1" />
             </div>
-            <div className="flex flex-col container mx-auto absolute py-80 ml-10 text-white font-semibold w-28 h-24 md:text-base sm:text-sm">
+            <div className="flex flex-col  absolute ml-10 text-white font-semibold w-28 h-24 sm:py-80 md:text-base sm:text-sm md:w-20 md:py-48 md:mx-5 lg:py-64 lg:mx-7 lg:text-xl xl:py-80">
               <p className="w-28 h-24">
                 <span className="font-bold text-white text-4xl">1716</span>{" "}
                 <br /> viajantes de <br /> 10 países
@@ -40,7 +41,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute h-32 md:1/4 ml-16 p-3">
               <img src="/Fotos/Layer_2.png" alt="icone-2" />
             </div>
-            <div className="flex flex-col container mx-auto absolute py-80 text-white font-semibold tracking-wide w-28 md:text-base sm:text-sm">
+            <div className="flex flex-col absolute py-80 text-white font-semibold tracking-wide w-28 md:text-base sm:text-sm md:py-48 md:mx-24 lg:py-64 lg:mx-7 lg:text-xl xl:py-80">
               <span className="font-bold text-4xl">111</span>
               <p>Expedições em grupo</p>
             </div>
@@ -51,7 +52,7 @@ export const Menu = () => {
               <img src="/icons/circlemoney.svg" alt="circle-money" />
               <img src="/icons/house.svg" alt="casa-vivala" />
             </div>
-            <div className="flex flex-col container mx-auto absolute py-80 text-white w-28 md:text-base sm:text-sm ">
+            <div className="flex flex-col container mx-auto absolute py-80 text-white w-28 md:text-base sm:text-sm md:py-44 md:ml-5 lg:py-60 lg:mx-7 lg:text-xl xl:py-72">
               <ul>
                 <p className="font-bold text-2xl">R$ 1.7M</p>
                 <li>injetados nas</li>
@@ -65,7 +66,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-10 p-3 py-10">
               <img src="/icons/timevivala.svg" alt="icons-timevivala" />
             </div>
-            <div className="flex flex-wrap container mx-auto absolute py-80 text-white w-28 ml-10 text-xl">
+            <div className="flex flex-wrap absolute py-80 text-white w-28 ml-10 text-xl md:py-48 md:mx-5 md:text-base lg:py-64 lg:mx-7 lg:text-xl xl:py-80">
               <p>
                 <span className="font-bold text-4xl">8152</span>
                 <br />
@@ -81,7 +82,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-5 py-7">
               <img src="/icons/hands.svg" alt="hands vivala" />
             </div>
-            <div className="flex flex-wrap absolute text-white container mx-auto py-80 w-32 ml-10 md:text-base sm:text-sm">
+            <div className="flex flex-wrap absolute text-white container mx-auto py-80 w-32 ml-10 md:text-base sm:text-sm md:py-44 md:mx-5 lg:py-60 lg:mx-7 lg:text-xl xl:py-72">
               <ul>
                 <p className="font-bold text-4xl">201</p>
                 <li>negocios</li>
@@ -95,7 +96,7 @@ export const Menu = () => {
             <div className="flex flex-wrap absolute mr-10 py-10">
               <img src="/icons/treevivala.svg" alt="arvore-vivala" />
             </div>
-            <div className="flex flex-wrap absolute text-white container mx-auto py-80 ml-10 w-32 text-xl md:w-28 md:text-base sm:text-sm">
+            <div className="flex flex-wrap absolute text-white container mx-auto py-80 ml-10 w-32 text-xl md:w-28 md:text-base sm:text-sm md:py-44 md:mx-5 lg:py-60 lg:mx-7 lg:text-xl xl:py-72">
               <ul>
                 <p className="font-bold text-4xl">16</p>
                 <li>Destinos</li>
@@ -126,7 +127,7 @@ export const Menu = () => {
             alt="amazonia vivala"
             className="w-full md:w-full sm:w-full"
           />
-          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] h-[193px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px]  md:w-[742px] md:h-[193px]">
+          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-[450px] sm:h-[-800px] md:w-[742px] md:h-[193px] border border-blue-500">
             <div className="flex flex-col text-orange-600 font-bold p-5 md:flex md:flex-col md:mb-4">
               <img
                 src="/Fotos/Frame.png"
@@ -137,14 +138,14 @@ export const Menu = () => {
                 Nossa Missão
               </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-44 sm:h-32 md:w-32 md:h-32 ml-14 p-7 break-words text-2xl border border-blue-600">
               <p className="sm:text-sm md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
                 Ressignificar a relação das pessoas com o Brasil, os biomas e as
                 comunidades tradicionais do país.
               </p>
             </div>
           </div>
-          <div className="flex mt-10 2xl:w-[1000px] h-[193px] 2xl:mb-20 xl:w-[900px] shadow-lg bg-white absolute sm:w-80 sm:h-[500px] md:w-[742px] md:h-[193px] md:mt-10">
+          <div className="flex mt-10 2xl:w-[1000px] h-[193px] 2xl:mb-20 xl:w-[900px] shadow-lg bg-white absolute sm:w-[450px] sm:h-[-800px] md:w-[742px] md:h-[193px] md:mt-10">
             <div className="flex flex-col text-orange-600 font-bold p-5 flex-shrink-0">
               <img
                 src="/Fotos/Frameyes.png"
@@ -162,7 +163,7 @@ export const Menu = () => {
               </p>
             </div>
           </div>
-          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-80 sm:h-[500px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
+          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-[-450px] sm:h-[-800px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
@@ -173,8 +174,8 @@ export const Menu = () => {
                 Nossos Valores
               </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-xl">
-              <ul className="sm:text-sm md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl">
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-44 md:w-32 h-32 ml-14 p-7 break-words text-xl sm:mr-44">
+              <ul className="sm:text-sm md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl border border-blue-500 sm:w-80 sm:mr-60">
                 <li>1. tratar o planeta como nosso maior acionista</li>
                 <li>2. Revelar o melhor do nosso potencial</li>
                 <li>3. Proporcionar experiencias inesqueciveis</li>
@@ -184,7 +185,7 @@ export const Menu = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-600 text-3xl 2xl:py-32 ml-60 mb-10 font-semibold">
+        <p className="text-gray-600 sm:py-36 md:py-24 text-3xl 2xl:py-32 xl:py-36 ml-60 font-semibold">
           Premios e conquistas
         </p>
         <div className="flex justify-center gap-5">
@@ -211,16 +212,16 @@ export const Menu = () => {
             </span>
             <img src="/Fotos/YLAI 1.png" alt="" />
           </div>
-          <div className=" w-56 h-52 p-5 grid justify-items-center border border-gray text-center text-xs text-gray-600 font-semibold shrink">
+          <div className="sm:hidden w-56 h-52 p-5 md:grid md:justify-items-center border border-gray text-center text-xs text-gray-600 font-semibold shrink">
             <p>
               Vencedora dos Prêmios Braztoa 2019 e 2020-2022, ONU e Organização
               Mundial de Turismo de Sustentabilidade
             </p>
-            <div className="container mx-auto flex justify-around w-20 h-14 gap-2 shrink">
+            <div className="flex gap-2 sm:hidden md:flex md:justify-center md:items-center lg:justify-center lg:items-center xl:justify-center xl:items-center">
               <img
                 src="/Fotos/image 44.png"
                 alt="brazta"
-                className="md:w-5 h-4"
+                className="sm:w-[15%] md:h-[15%] md:w-[25%] md:h-[45%] lg:w-[30%] lg:h-[30%] xl:w-[40%] xl:h-[40%] 2xl:w-[50%] 2xl:h-[50%]"
               />
               <img src="/Fotos/UNEnvironment_Logo_1.png" alt="UNEnviroment" />
               <img src="/Fotos/World_Tourism_Organization_Logo 1.png" alt="" />
@@ -388,4 +389,8 @@ export const Menu = () => {
 
 {
   /*div-pai do grupo de fotos m-10 container mx-auto py-auto */
+}
+
+{
+  /* div do scopo da linha 219 a 227 (img com 3 icones)   div pai (container mx-auto flex justify-around w-20 h-14 gap-2 shrink)*/
 }

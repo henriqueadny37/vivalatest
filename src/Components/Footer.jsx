@@ -1,11 +1,11 @@
 export const Footer = () => {
   return (
     <>
-      <div className="flex justify-between">
-        <div className="bg-orange-600 p-5">
+      <div className="flex flex-wrap justify-around relative w-full">
+        <div className="p-5 absolute">
           <img src="/Fotos/Logo Vivala.png" alt="Logo vivala" />
         </div>
-        <div className="bg-orange-600 p-5 text-center">
+        <div className="p-5 text-start absolute">
           <ul>
             <li>Inicio</li>
             <li>Busca</li>
@@ -16,15 +16,24 @@ export const Footer = () => {
             <li>Blog</li>
           </ul>
         </div>
-        <div className="bg-orange-600 p-5">
-          <ul>
-            <p className="text-center p-2">Fale conosco</p>
-            <li>+ 55 2999-888</li>
-            <li>+ 55 6666-5554</li>
-            <li>contato@vivala.com</li>
-          </ul>
+        <div className=" flex flex-col flex-nowrap justify-center absolute">
+          <p className="flex justify-center items-center font-bold text-white">
+            Fale conosco
+          </p>
+          <div className="flex flex-row gap-2">
+            <img src="/Fotos/Vector.png" alt="whats" />
+            <span>+55 (11) 966585778</span>
+          </div>
+          <div className="flex flex-row gap-2 py-3">
+            <img src="/Fotos/Vector.png" alt="whats" />
+            <span>+55 (11) 983491518</span>
+          </div>
+          <div className="flex flex-row gap-2 py-1">
+            <img src="/Fotos/ic_round-mail-outline.png" alt="email" />
+            <span>contato@vivala.hotmail.com</span>
+          </div>
         </div>
-        <div className="p-5 gap-5 bg-black text-white flex justify-center items-center top-0">
+        <div className="gap-5 text-white flex justify-center absolute">
           <div>
             <img src="/Fotos/instagram.png" alt="INSTAGRAM" />
           </div>
@@ -35,7 +44,36 @@ export const Footer = () => {
             <img src="/Fotos/mdi_linkedin.png" alt="LINKEDIN" />
           </div>
         </div>
+        <div className="flex gap-5 absolute">
+          <div>
+            <img src="/Fotos/flagBrazil.png" alt="" />
+          </div>
+          <div>
+            <img src="/Fotos/flagspain.png" alt="" />
+          </div>
+          <div>
+            <img src="/Fotos/flagUSA.png" alt="" />
+          </div>
+        </div>
+        <img
+          src="/Fotos/IMG_5882Footer.png"
+          alt="Footer_vivala"
+          className="w-full"
+        />
       </div>
     </>
   );
 };
+
+{
+  /* div fale conosco
+  <div className="bg-orange-600 p-5">
+          <ul>
+            <p className="text-center p-2">Fale conosco</p>
+            <li>+ 55 2999-888</li>
+            <li>+ 55 6666-5554</li>
+            <li>contato@vivala.com</li>
+          </ul>
+        </div>
+*/
+}

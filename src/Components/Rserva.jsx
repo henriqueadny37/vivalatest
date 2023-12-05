@@ -54,7 +54,7 @@ export const Rserva = () => {
           </ul>
         </div>
 
-        <div className="flex flex-wrap justify-between mx-96 p-3 absolute">
+        <div className="flex flex-wrap justify-between md:ml-[600px] p-3 absolute">
           <div className="flex gap-2">
             <div>
               <img src="/Fotos/instagram.png" alt="instgram-icon" />
@@ -69,25 +69,48 @@ export const Rserva = () => {
               <img src="/Fotos/mdi_youtube.png" alt="youtube" />
             </div>
           </div>
-          <div className="flex gap-3 mx-10">
-            <div>
-              <img src="/Fotos/flagBrazil.png" alt="" />
-            </div>
-            <div>
-              <img src="/Fotos/flagspain.png" alt="" />
-            </div>
-            <div>
-              <img src="/Fotos/flagUSA.png" alt="" />
-            </div>
+        </div>
+        <div className="flex gap-3 mx-10 absolute py-5 xl:ml-[1100px]">
+          <div>
+            <img src="/Fotos/flagBrazil.png" alt="" />
+          </div>
+          <div>
+            <img src="/Fotos/flagspain.png" alt="" />
+          </div>
+          <div>
+            <img src="/Fotos/flagUSA.png" alt="" />
           </div>
         </div>
+        <div className="absolute py-32 xl:ml-[60%] text-white font-bold">
+          <span>ATENTE-SE AS NOVIDADES</span>
+        </div>
+        <div className="absolute flex flex-col xl:bottom-28 xl:end-44 text-white">
+          <input
+            type="text"
+            className="outline-none w-32 ml-32 bg-transparent"
+            placeholder="Digite seu e-mail"
+          />
+          <div className="w-52 xl:ml-32 border border-y-white"></div>
+        </div>
+
+        <button className="flex absolute xl:mt-60 xl:ml-[850px] border rounded text-white justify-center items-center w-20">
+          Enviar
+        </button>
 
         <img
           src="/Fotos/IMG_5882Footer.png"
           alt="Footer_vivala"
-          className="w-full"
+          className="w-full h-[330px]"
         />
       </footer>
     </>
   );
 };
+{
+  /* rascunho footer
+   <div className="absolute flex flex-col md:bottom-12 md:end-44 text-white">
+          <button className="xl:ml-10">Digite seu e-mail</button>
+          <div className="w-44 xl:ml-32 border border-y-white"></div>
+        </div>
+*/
+}

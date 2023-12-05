@@ -11,8 +11,8 @@ export const Navbar = () => {
                 className="p-2 w-44 translate-x-4 translate-y-4"
               />
             </div>
-            <div className="md:static absolute text-white py-11 left-0 top-[-100%] sm:hidden md:flex md:justify-center md:min-h-fit min-h-[60vh] md:w-auto w-full flex items-center px-5 xl:font-semibold 2xl:font-semibold text-xl lg:flex lg:w-full md:text-lime-500 md:items-center lg:text-yellow-300 xl:text-pink-500  2xl:text-white">
-              <ul className=" md:flex sm:hidden md:items-center xl:gap-4 md:gap-2 md:justify-center">
+            <div className="navLinks duration-500 md:static absolute text-white py-11 left-0 top-[-100%] sm:hidden md:flex md:justify-center md:min-h-fit min-h-[60vh] md:w-auto flex items-center px-5 xl:font-semibold 2xl:font-semibold text-xl lg:flex lg:w-full md:text-lime-500 md:items-center lg:text-yellow-300 xl:text-pink-500  2xl:text-white">
+              <ul className="md:flex sm:hidden md:items-center xl:gap-4 md:gap-2 md:justify-center">
                 <li>
                   <a href="#">Inicio</a>
                 </li>
@@ -90,6 +90,14 @@ export const Navbar = () => {
     </>
   );
 };
+
+{
+  /*   const navLinks = document.querySelector(".navLinks");
+  function onToggleMenu(e) {
+    e.name = e.name === "menu" ? "close" : "menu";
+    navLinks.classList.toggle("top-[9%]");
+  } */
+}
 
 {
   /* primeira foto
