@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Rserva } from "./Rserva";
-import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import SlideBar from "./SlideBar";
+import { NewFooter } from "./NewFooter";
 
 export const Menu = () => {
   return (
     <>
-      <Navbar />
+      <SlideBar />
       <div className="container mx-auto">
         <div>
           <p className="mt-10 text-center text-gray-600 text-4xl">
@@ -127,25 +127,25 @@ export const Menu = () => {
             alt="amazonia vivala"
             className="w-full md:w-full sm:w-full"
           />
-          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] 2xl:mb-[500px] xl:w-[900px] shadow-lg bg-white absolute sm:w-[450px] sm:h-[-800px] md:w-[742px] md:h-[193px] border border-blue-500">
+          <div className="flex mb-96 flex-shrink-0 2xl:w-[1000px] 2xl:mb-[500px] xl:w-[900px] xl:mb-[600px] shadow-lg bg-white absolute sm:mt-48 sm:w-[450px] sm:h-[-800px] md:w-[742px] md:h-[150px] lg:h-[200px] lg:mb-[500px] xl-h[300px]">
             <div className="flex flex-col text-orange-600 font-bold p-5 md:flex md:flex-col md:mb-4">
               <img
                 src="/Fotos/Frame.png"
                 alt="Mountain_icon_vivala"
                 className="w-[62px] h-[64px] ml-5 flex flex-shrink"
               />
-              <span className="p-2 sm:text-sm md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl">
+              <span className="p-2 sm:text-sm md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl ">
                 Nossa Missão
               </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-44 sm:h-32 md:w-32 md:h-32 ml-14 p-7 break-words text-2xl border border-blue-600">
-              <p className="sm:text-sm md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-44 sm:h-32 md:w-32 md:h-32 ml-14 p-7 break-words text-2xl">
+              <p className="sm:text-base font-semibold md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
                 Ressignificar a relação das pessoas com o Brasil, os biomas e as
                 comunidades tradicionais do país.
               </p>
             </div>
           </div>
-          <div className="flex mt-10 2xl:w-[1000px] h-[193px] 2xl:mb-20 xl:w-[900px] shadow-lg bg-white absolute sm:w-[450px] sm:h-[-800px] md:w-[742px] md:h-[193px] md:mt-10">
+          <div className="flex mt-10 2xl:w-[1000px] h-[193px] 2xl:mb-20 xl:w-[900px] xl:mb-44 lg:mb-28 xl:h-40 shadow-lg bg-white absolute sm:w-[450px] sm:h-[-800px] sm:mt-48 md:w-[742px] md:h-[150px] md:mt-66">
             <div className="flex flex-col text-orange-600 font-bold p-5 flex-shrink-0">
               <img
                 src="/Fotos/Frameyes.png"
@@ -157,13 +157,13 @@ export const Menu = () => {
               </span>
             </div>
             <div className="flex-1 text-gray-500 items-center w-32 h-32 ml-14 p-7 break-words text-2xl">
-              <p className="sm:text-sm md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
+              <p className="sm:text-base font-semibold md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
                 Transformar o Brasil no maior destino de turismo sustentavél do
                 planeta
               </p>
             </div>
           </div>
-          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-96 flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow bg-white absolute lg:-my-40 sm:w-[-450px] sm:h-[-800px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-40">
+          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-[400px] flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow-lg bg-white absolute lg:-my-40 sm:w-[-450px] sm:h-[-800px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-[250px]">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
@@ -174,8 +174,8 @@ export const Menu = () => {
                 Nossos Valores
               </span>
             </div>
-            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-44 md:w-32 h-32 ml-14 p-7 break-words text-xl sm:mr-44">
-              <ul className="sm:text-sm md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl border border-blue-500 sm:w-80 sm:mr-60">
+            <div className="flex-1 flex-shrink-0 text-gray-500 items-center sm:w-96 md:w-32 h-32 ml-14 p-7 break-words text-xl ">
+              <ul className="sm:text-sm font-semibold md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl">
                 <li>1. tratar o planeta como nosso maior acionista</li>
                 <li>2. Revelar o melhor do nosso potencial</li>
                 <li>3. Proporcionar experiencias inesqueciveis</li>
@@ -185,7 +185,7 @@ export const Menu = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-600 sm:py-36 md:py-24 text-3xl 2xl:py-32 xl:py-36 ml-60 font-semibold">
+        <p className="text-gray-600 sm:py-36 md:py-36 text-3xl 2xl:py-32 xl:py-36 ml-60 font-semibold">
           Premios e conquistas
         </p>
         <div className="flex justify-center gap-5">
@@ -238,7 +238,7 @@ export const Menu = () => {
             VIVALÁ NA MIDIA
           </p>
         </div>
-        <div className="grid grid-rows-2 grid-flow-col gap-4 mt-20 container mx-auto">
+        <div className="lg:grid lg:grid-rows-2 lg:grid-flow-col gap-4 mt-20 sm:flex sm:flex-col md:flex md:flex-col">
           <div className="row-span-3 border border-gray-200">
             <img src="/Fotos/image 40.png" alt="familia" />
             <span className="text-orange-600 font-semibold text-2xl p-5">
@@ -253,7 +253,11 @@ export const Menu = () => {
           </div>
           <div className="col-span-2 border border-gray-200">
             <div className="flex gap-4 text-2xl">
-              <img src="/Fotos/image 37.png" alt="Diario do Comercio" />
+              <img
+                src="/Fotos/image 37.png"
+                alt="Diario do Comercio"
+                className="float-left"
+              />
               <div className="flex flex-col">
                 <span className="font-semibold text-orange-600">
                   Diário do Comercio
@@ -265,10 +269,11 @@ export const Menu = () => {
             </div>
           </div>
           <div className="row-span-2 border border-gray-200">
-            <div className="flex gap-4 text-2xl w-3/4">
+            <div className="lg:flex gap-4 text-2xl">
               <img
                 src="/Fotos/Expedição_Lençois Maranhense_222.png"
                 alt="lençois maranhenses"
+                className="float-left"
               />
               <div className="flex flex-col">
                 <span className="text-orange-600 font-semibold">
@@ -301,7 +306,12 @@ export const Menu = () => {
         </div>
       </div>
       {/* FOOTER*/}
-      <Rserva />
+      <div className="sm:hidden md:flex">
+        <Footer />
+      </div>
+      <div className="sm:flex sm:flex-col md:hidden">
+        <NewFooter />
+      </div>
     </>
   );
 };
@@ -393,4 +403,8 @@ export const Menu = () => {
 
 {
   /* div do scopo da linha 219 a 227 (img com 3 icones)   div pai (container mx-auto flex justify-around w-20 h-14 gap-2 shrink)*/
+}
+
+{
+  /*div do texto da div nossos valores/ sm:w-80 sm:mr-60 linha 179 */
 }

@@ -1,15 +1,15 @@
 export const NewFooter = () => {
   return (
     <>
-      <footer className="grid grid-cols-5 w-full relative">
-        <div className="p-3 bg-orange-600">
+      <footer className="grid grid-cols-1 relative mt-10">
+        <div className="p-3 absolute">
           <img src="/Fotos/Logo Vivala.png" alt="" />
           <ul className="font-medium text-white font-italic md:text-white">
             <li>Vivalá Turismo e Serviços Ltda</li>
             <li>CNPJ 22.693.622.0001-85</li>
           </ul>
         </div>
-        <div className="absolute text-center">
+        <div className="absolute mt-48 ml-5 text-white">
           <ul>
             <li>Inicio</li>
             <li>Busca</li>
@@ -20,19 +20,68 @@ export const NewFooter = () => {
             <li>Blog</li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <p>Fale conosco</p>
-            <li>+ 55 6666-8888</li>
-            <li>+ 55 7777-2222</li>
-            <li>contato@vivala.com.br</li>
+        <div className="flex flex-col mt-96 ml-5 flex-nowrap absolute py-5 text-white lg:ml-36 xl:ml-24">
+          <p className="font-bold text-white text-xl">Fale concosco</p>
+          <div className="flex flex-row py-2">
+            <img src="/Fotos/Vector.png" alt="whatsapp" />
+            <p>+55 (11) 966585778</p>
+          </div>
+          <div className="flex flex-row py-2">
+            <img src="/Fotos/Vector.png" alt="" />
+            <p>+55 (11) 983491518</p>
+          </div>
+          <div className="flex flex-row">
+            <img src="/Fotos/ic_round-mail-outline.png" alt="" />
+            <p>contato@vivala.com.br</p>
+          </div>
+          <div className="xl:my-10">
             <p>
-              Av Paulista 960, cj 502, Bela Vista, <br />
-              São Paulo, CEP 01310-100
+              {" "}
+              Av Paulista 960, cj 502, Bela Vista,
+              <br /> São Paulo, CEP 01310-100
             </p>
-          </ul>
+          </div>
+          <div className="flex flex-col absolute mt-60">
+            <p className="text-white font-bold text-xl ml-4">
+              Atente-se as novidades
+            </p>
+            <div className="py-10 -mx-28">
+              <input
+                type="text"
+                className="outline-none w-32 ml-32 bg-transparent"
+                placeholder="Digite seu e-mail"
+              />
+              <hr />
+            </div>
+          </div>
         </div>
-        <div className="col-span-2 bg-orange-600 p-3">
+        <div className="flex flex-col absolute mx-[500px] py-5">
+          <div className="flex gap-3">
+            <img src="/Fotos/instagram.png" alt="instgram-icon" />
+            <img src="/Fotos/ic_baseline-facebook.png" alt="facebook" />
+            <img src="/Fotos/mdi_linkedin.png" alt="linkedin" />
+            <img src="/Fotos/mdi_youtube.png" alt="youtube" />
+          </div>
+          <div className="flex gap-5 mt-80 w-6 h-10">
+            <img src="/Fotos/flagBrazil.png" alt="" className="" />
+            <img src="/Fotos/flagspain.png" alt="" className="" />
+            <img src="/Fotos/flagUSA.png" alt="" className="" />
+          </div>
+        </div>
+        <img
+          src="/Fotos/IMG_5882Footer.png"
+          alt=""
+          className="w-full sm:h-[800px]"
+        />
+      </footer>
+    </>
+  );
+};
+
+{
+  /*linha 44
+
+ <div className="col-span-2 absolute ml-96 p-3">
           <div className="flex justify-between">
             <div className="flex gap-2">
               <div>
@@ -49,7 +98,7 @@ export const NewFooter = () => {
               </div>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 mt-96">
               <div>
                 <img src="/Fotos/flagBrazil.png" alt="" />
               </div>
@@ -61,28 +110,50 @@ export const NewFooter = () => {
               </div>
             </div>
           </div>
-          <div className="py-6">
+          <div className="py-6 absolute">
             <p className="text-black font-semibold text-2xl">
               Atente-se as novidades
             </p>
-            <div>
+            <div className="absolute">
               <input
                 type="text"
-                className="border-b border-white focus:outline-none "
+                className="outline-none w-32 ml-32 bg-transparent"
+                placeholder="Digite seu e-mail"
               />
-              <label htmlFor="">Username</label>
             </div>
           </div>
         </div>
-        <div className="col-span-4 bg-orange-600 flex justify-end">
+*/
+}
+
+{
+  /*  <div className="absolute mt-96 text-white">
+          <ul>
+            <p className="font-semibold text-xl">Fale conosco</p>
+            <li>+ 55 6666-8888</li>
+            <li>+ 55 7777-2222</li>
+            <li>contato@vivala.com.br</li>
+            <p>
+              Av Paulista 960, cj 502, Bela Vista, <br />
+              São Paulo, CEP 01310-100
+            </p>
+          </ul>
+        </div> */
+}
+
+{
+  /* <div className="col-span-4 absolute bottom-0  flex justify-end">
           <div className="w-32 h-10 border border-black text-center cursor-pointer">
             <button>Buscar</button>
           </div>
-        </div>
-      </footer>
-    </>
-  );
-};
+        </div> */
+}
+
+{
+  /* <button className="flex absolute xl:mt-60 xl:ml-[850px] border rounded text-white justify-center items-center w-20">
+          Enviar
+        </button> */
+}
 
 {
   /* 
