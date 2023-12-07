@@ -163,7 +163,7 @@ export const Menu = () => {
               </p>
             </div>
           </div>
-          <div className="flex xl:mt-[400px] 2xl:mt-[500px] lg:mt-96 md:mt-96 sm:mt-[400px] flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow-lg bg-white absolute lg:-my-40 sm:w-[-450px] sm:h-[-800px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-[250px]">
+          <div className="flex xl:mt-[400px] 2xl:mt-[600px] lg:mt-96 md:mt-96 sm:mt-[400px] flex-shrink lg:w-[742px] lg:h-[250px] xl:w-[900px] xl:h-[300px] xl:flex 2xl:w-[1000px] 2xl:h-96 shadow-lg bg-white absolute lg:-my-40 sm:w-[-450px] sm:h-[-800px] sm:-my-40 md:w-[742px] md:h-[250px] md:-my-[250px]">
             <div className="flex flex-col text-orange-600 font-bold p-5">
               <img
                 src="/Fotos/hearticon.png"
@@ -315,96 +315,3 @@ export const Menu = () => {
     </>
   );
 };
-
-{
-  /*    <div className="absolute flex justify-end ml-96 gap-5 py-5">
-          <div className="flex gap-2 ml-96">
-            <div>
-              <img src="/Fotos/instagram.png" alt="instgram-icon" />
-            </div>
-            <div>
-              <img src="/Fotos/ic_baseline-facebook.png" alt="facebook" />
-            </div>
-            <div>
-              <img src="/Fotos/mdi_linkedin.png" alt="linkedin" />
-            </div>
-            <div>
-              <img src="/Fotos/mdi_youtube.png" alt="youtube" />
-            </div>
-          </div>
-          <div className="flex gap-3 justify-content justify-end py-2">
-            <div>
-              <img src="/Fotos/flagBrazil.png" alt="" />
-            </div>
-            <div>
-              <img src="/Fotos/flagspain.png" alt="" />
-            </div>
-            <div>
-              <img src="/Fotos/flagUSA.png" alt="" />
-            </div>
-          </div>
-        </div>  */
-}
-
-{
-  /* div da imagem infográfica abaixo
- <div className="mt-10  grid justify-items-center">
-          <p className="mr-[800px] text-gray-600 text-3xl font-semibold">
-            Viajando com a vivalá, você:
-          </p>
-          <img
-            src="/Fotos/infografico.png"
-            alt="infografico"
-            width={1040}
-            height={992}
-            className="w-full md:flex flex-wrap"
-          />
-        </div>
-*/
-}
-
-{
-  /* div da imagem com texto (foto mundo com mão embaixo)
-  <div className="w-full flex mt-20 p-5 container mx-auto font-semibold text-4xl text-gray-500">
-          <img
-            src="/Fotos/moeda.png"
-            alt="moedaPlaneta"
-            className="w-full flex sm:hidden md:flex-wrap"
-          />
-          <p className="flex ml-3 sm:hidden md:flex-wrap">
-            Acreditamos que o turismo sustentável seja fator chave para o
-            desenvolvimento socioambiental e empoderamento de comunidades
-            brasileiras.
-          </p>
-        </div>
-
-*/
-}
-
-{
-  /*    <div className="flex col-span-2 my-10 mx-20">
-          <div className="flex text-3xl text-gray-600 font-semibold">
-            <img src="/Fotos/moeda.png" alt="foto-mundo" />
-            <div className="flex flex-col py-5 mx-10">
-              <span>
-                Acreditamos que o turismo sustentável <br /> seja fator chave
-                para o desenvolvimento <br /> socioambiental e empoderamento de{" "}
-                <br />
-                comunidades brasileiras.
-              </span>
-            </div>
-          </div>
-        </div>*/
-}
-
-{
-  /*div-pai do grupo de fotos m-10 container mx-auto py-auto */
-}
-
-{
-  /* div do scopo da linha 219 a 227 (img com 3 icones)   div pai (container mx-auto flex justify-around w-20 h-14 gap-2 shrink)*/
-}
-
-{
-  /*div do texto da div nossos valores/ sm:w-80 sm:mr-60 linha 179 */
-}

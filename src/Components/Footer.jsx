@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between sm:ml-[500px] top-0 md:ml-[500px] lg:ml-[600px] p-3 absolute">
+        <div className="flex flex-wrap justify-between sm:ml-[500px] top-0 md:ml-[500px] lg:ml-[600px] p-3 absolute xl:ml-[700px] 2xl:ml-[1500px]">
           <div className="flex gap-2">
             <div>
               <img src="/Fotos/instagram.png" alt="instgram-icon" />
@@ -63,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-nowrap mx-10 absolute py-5 md:ml-[850px] lg:ml-[950px] xl:ml-[1100px]">
+        <div className="flex flex-nowrap mx-10 absolute py-5 md:ml-[850px] lg:ml-[950px] xl:ml-[1100px] 2xl:ml-[2000px]">
           <div className="flex md:gap-4 xl:gap-4 2xl:gap-4">
             <div>
               <img src="/Fotos/flagBrazil.png" alt="" />
